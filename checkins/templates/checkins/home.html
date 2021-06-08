@@ -1,0 +1,17 @@
+{% extends "checkins/base.html" %}
+
+{% block content %}
+    <div class="content-section">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="mt-6">Home</h1>
+    </div>    
+    <div class="content-section">
+        {% for checkin in checkins %}
+            <h1>>>> {{ checkin }}</h1>
+        {% endfor %}
+    </div>
+
+{% endblock content %}
